@@ -1,0 +1,11 @@
+Tablas básicas que recogen la información principal de Keepcoding:
+1. Alumnos -> permite asociar la información con bootcamps y/o cursos correspondientes 
+2. Profesores -> permite asociar la información con módulos y/o cursos correspondientes 
+3. Bootcamps -> permite asociar la información con categorías, módulos, alumnos y profesores
+4. Modulos (de los bootcamps) -> permite asociar la información con bootcamps y profesores
+5. Cursos (otros que no sean bootcamps) -> permite asociar la información con categorías, alumnos y profesores
+6. Categorías (ej. IA, marketing, web etc) -> permite asociar la información con bootcamps y cursos
+
+Cada tabla tiene su primary key, y un número variable de foreign keys.
+En algunos casos la relación puede ser 1:n, como profesor:cursos, bootcamp:módulos, alumno:cursos, alumno:bootamps, etc.
+En otros casos la relación	es 1:1, como bootcamp:categoría. 
